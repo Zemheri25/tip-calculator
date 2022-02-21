@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ffbd68a4de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="leftside">
+            <label for="bill" class="billlabel">Bill</label>
+            <br>
+            <div class="inputdiv">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <input type="number" name="bill" id="bill">
+            </div>
+            <div class="tips">
+                <button id="fivepercent" class="percent">5%</button>
+                <button id="tenpercent" class="percent">10%</button>
+                <button id="fifteenpercent" class="percent">15%</button>
+                <button id="twentyfivepercent" class="percent">25%</button>
+                <button id="halfpercent" class="percent">50%</button>
+
+            </div>
+
+            <div class="numberofp">
+                <label for="numberofpeople" class="numberpeoplelabel">Number of people</label>
+                <br>
+                <div class="inputdiv">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="number" name="numberofpeople" id="numberofpeople">
+                </div>
+            </div>
+        </div>
+
+        <div class="rightside">
+            <div class="rightside__amount">
+                <div class="rightside__amount--left">
+                <h3>Tip Amount</h3>
+                <h5 class="h5">/person</h5>
+                </div>
+
+                <div class="rightside__amount--right" id="tipamount">
+                    
+                </div>
+            </div>
+
+            <div class="rightside__amount">
+                <div class="rightside__amount--left">
+                <h3>Total</h3>
+                <h5 class="h5">/person</h5>
+                </div>
+
+                <div class="rightside__amount--right" id="total">
+                   
+                </div>
+            </div>
+
+            <div class="resetbuttondiv">
+            <button type="reset" class="resetbutton" id="resetbutton">RESET</button>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
